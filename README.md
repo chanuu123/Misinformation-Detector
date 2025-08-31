@@ -1,4 +1,4 @@
-# Fake News Detection
+# Misinformation detector
 
 This project aims to predict whether a news article is real or fake using machine learning techniques. The prediction is based on the content of the news articles and uses **natural language processing techniques**.
 
