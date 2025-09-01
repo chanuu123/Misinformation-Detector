@@ -1,36 +1,64 @@
 # Misinformation detector
 
-This project aims to predict whether a news article is real or fake using machine learning techniques. The prediction is based on the content of the news articles and uses **natural language processing techniques**.
+ A machine learning project designed to detect whether a news article is **real** or **fake** using **Natural Language Processing (NLP)** techniques.
+
+## Overview
+
+This project leverages text preprocessing, TF-IDF vectorization, and classification models to analyze news content and predict its authenticity. The goal is to help identify misinformation in digital media.
 
 ## Dataset
 
-The dataset used for this project is the training dataset in CSV format. It contains information about news articles, including their authors, titles, and labels (real or fake). Link to the dataset : 'https://www.kaggle.com/competitions/fake-news/data?select=train.csv'
+The dataset consists of news articles with associated labels (real or fake).
+You can download the dataset from https://www.kaggle.com/competitions/fake-news/data?select=train.csv&utm_source=chatgpt.com
 
-## Usage
+## Installation & Requirements
 
-* Install the required dependencies. You can install them using the following command:
-    _pip install pandas nltk scikit-learn_
-* Additionally, download the necessary NLTK stopwords by running the following command:
-    _nltk.download('stopwords')_
+* Install the required dependencies: 
+                                             "pip install pandas nltk scikit-learn"
+* Also, download the necessary NLTK resources: 
+                                             "import nltk
+                                             nltk.download('stopwords')"
 
-## Natural Language Processing
+## Preprocessing Steps
 
-To preprocess the textual data, the following natural language processing techniques are applied:
+The text data undergoes several NLP transformations:
 
-* Removal of special characters and non-alphabetic characters.
-* Conversion to lowercase.
-* Tokenization and stemming using the PorterStemmer algorithm.
-* Removal of stop words.
+* Remove special and non-alphabetic characters
+* Convert text to lowercase
+* Tokenization
+* Stopword removal
+* Stemming using Porter Stemmer
 
-## Model Training and Evaluation
+## Model Pipeline
 
-The project utilizes the **TF-IDF (Term Frequency-Inverse Document Frequency) vectorization** technique to convert the textual data into numerical features. The **logistic regression** algorithm is then used to train a classification model.
+1) Feature Extraction: TF-IDF (Term Frequency - Inverse Document Frequency)
+2) Model: Logistic Regression
+3) Evaluation Metrics: Accuracy & F1-Score
 
-* The model is evaluated using the **F1 score** and **accuracy metrics** on both the training and testing datasets.
-* Finally, you can test the model by providing new text data and obtaining the predicted label (fake or real).
+## How to Run
 
-### Future Improvements 
+* Train the model on the dataset
+* Evaluate performance on training and test sets
+* Predict authenticity for new news text inputs
 
-* Incorporating additional features, such as  social network information, to provide more context for the prediction.
+## Technologies used
+
+* **Python**
+* **NLTK** for text preprocessing
+* **Scikit-learn** for ML models and evaluation
+* **Pandas/Numpy** for data handling
+
+## Results
+
+The trained models demonstrates reliable performance in distinguishing between reala and fake news showcasing the potential of NLP + ML in combating misinformation. 
+
+## Future Enhancements
+
+* Incorporate social context features for better prediction
+* Use larger and more diverse datasets to reduce bias
+* Experiment with advanced models (e.g., BERT, LSTM)
+
+## License
+This project is open-source and available under the MIT License.
 * Collecting a larger and more diverse dataset to train the model, potentially reducing biases and improving generalization.
 
