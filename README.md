@@ -9,7 +9,7 @@ This project leverages text preprocessing, TF-IDF vectorization, and classificat
 ## Dataset
 
 The dataset consists of news articles with associated labels (real or fake).
-You can download the dataset from https://www.kaggle.com/competitions/fake-news/data?select=train.csv&utm_source=chatgpt.com
+You can download the dataset from https://www.kaggle.com/code/therealsampat/fake-news-detection
 
 ## Installation & Requirements
 
@@ -46,13 +46,5 @@ The text data undergoes several NLP transformations:
 
 The trained models demonstrates reliable performance in distinguishing between reala and fake news showcasing the potential of NLP + ML in combating misinformation. 
 
-## Future Enhancements
 
-* Incorporate social context features for better prediction
-* Use larger and more diverse datasets to reduce bias
-* Experiment with advanced models (e.g., BERT, LSTM)
-
-## License
-This project is open-source and available under the MIT License.
-* Collecting a larger and more diverse dataset to train the model, potentially reducing biases and improving generalization.
 
