@@ -35,12 +35,6 @@ The text data undergoes several NLP transformations:
 2) Model: Logistic Regression
 3) Evaluation Metrics: Accuracy & F1-Score
 
-## How to Run
-
-* Train the model on the dataset
-* Evaluate performance on training and test sets
-* Predict authenticity for new news text inputs
-
 ## Technologies used
 
 * **Python**
